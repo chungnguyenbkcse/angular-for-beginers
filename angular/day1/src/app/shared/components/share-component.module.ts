@@ -7,6 +7,7 @@ import { LeftPanelComponent } from './left-panel/left-panel.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { PageSettingComponent } from './page-setting/page-setting.component';
 import { TabSettingComponent } from './page-setting/tab-setting/tab-setting.component';
+import { MenuComponent } from './app-menu/menu.component';
 
 @NgModule({
   imports: [
@@ -19,12 +20,14 @@ import { TabSettingComponent } from './page-setting/tab-setting/tab-setting.comp
     PageHeaderComponent,
     PageSettingComponent,
     TabSettingComponent,
+    MenuComponent,
   ],
   exports: [
     TopBarComponent,
     LeftPanelComponent,
     PageHeaderComponent,
-    PageSettingComponent
+    PageSettingComponent,
+    MenuComponent,
   ]
 })
 export class ShareComponentModule { }

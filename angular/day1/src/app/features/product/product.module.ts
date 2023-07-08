@@ -8,7 +8,7 @@ import { ProductAlertsComponent } from './component/product-alerts/product-alert
 import { ProductDetailsComponent } from './component/product-details/product-details.component';
 import { ProductListComponent } from './component/product-list/product-list.component';
 import { ProductComponent } from './product.component';
-import { ShareComponentModule } from 'src/app/share/components/share-component.module';
+import { ShareComponentModule } from 'src/app/shared/components/share-component.module';
 
 @NgModule({
   declarations: [

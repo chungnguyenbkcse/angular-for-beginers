@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
-import { NotFoundComponent } from './share/components/not-found/not-found.component';
+import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 import { GuestLayoutComponent } from './layouts/guest-layout/guest-layout.component';
 import { MemLayoutComponent } from './layouts/mem-layout/mem-layout.component';
 import { AuthGuard } from './features/auth/auth.guard';

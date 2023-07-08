@@ -1,0 +1,14 @@
+<ul id="js-nav-menu" class="nav-menu">
+  <li *ngFor="let item of menuItems" [ngClass]="{ 'has-sub': item.children }" routerLinkActive="active">
+    <a *ngIf="!item.children" [routerLink]="item.route"  [attr.title]="item.title" [attr.data-filter-tags]="item.dataFilterTags">
+      <i class="{{ item.icon }}"></i>
+      <span class="nav-link-text" [attr.data-i18n]="item.dataI18n">{{ item.label }}</span>
+    </a>
+    <a *ngIf="item.children" href="javascript:void(0)" (click)="toggleSubMenu(item)" [attr.title]="item.title" [attr.data-filter-tags]="item.dataFilterTags">
+      <i class="{{ item.icon }}"></i>
+      <span class="nav-link-text" [attr.data-i18n]="item.dataI18n">{{ item.label }}</span>
+      <span class="fas fa-caret-right"></span>
+    </a>
+    <app-menu *ngIf="item.children && item.expanded" [menuItems]="item.children"></app-menu>
+  </li>
+</ul>

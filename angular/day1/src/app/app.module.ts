@@ -4,10 +4,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app.routing.module';
-import { SharedModule } from './share/shared.module';
+import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
-import { NotFoundComponent } from './share/components/not-found/not-found.component';
+import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 
 import { ThemeSettingsService } from './layouts/theme-settings.service';
 
