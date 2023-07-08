@@ -1,0 +1,19 @@
+version: '3.3'
+name: 'day1'
+services:
+#zone api
+
+
+  #zone web
+  main-web-angular:
+    container_name: main-web-angular
+    image: node:18.10.0
+    restart: always
+    environment:
+      - PATH=/usr/src/day1/node_modules/.bin:$PATH
+    command: sh -c "cd /usr/src/day1 && yarn install && ng serve --host 0.0.0.0 --port 4400"
+    volumes:
+      - ../../day1:/usr/src/day1
+      - ../../day1/node_modules:/usr/src/day1/node_modules
+    ports:
+      - 4400:4400
